@@ -8,6 +8,28 @@
 <title>AGREGAR TAREA</title>
 </head>
 <body>
+<script>
+function alertar(msg){
+	alert(msg+" esta vacio")
+	}
+	function validar(){
+		var titulo=document.forms["formularioTarea"]["titulo"].value;
+		var descripcion=document.forms["formularioTarea"]["descripcion"].value;
+		var categoria=document.forms["formularioTarea"]["categoria"].value;
+		var propietario=document.forms["formularioTarea"]["propietario"].value;
+		if(!titulo){alertar("titulo");
+		return false;
+		}else if(!categoria){
+			alertar("categoria");
+		return false;
+		}else if(!descripcion){
+			alertar("descripcion");
+		return false;
+		}else if(!propietario){alertar("propietario");
+		return false;
+		}
+		}
+	</script>
 <form method="post" action="TareasServlet">
     <table>
 	<tr>
