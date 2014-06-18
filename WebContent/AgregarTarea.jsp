@@ -28,7 +28,7 @@ function alertar(msg){
 		}else if(!propietario){alertar("propietario");
 		return false;
 		}
-		}
+}
 	</script>
 <form method="post" action="TareasServlet">
     <table>
